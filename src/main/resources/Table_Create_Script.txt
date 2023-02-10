@@ -1,0 +1,11 @@
+Create Table Member (
+	IDX number constraint PK_Member_idx primary key,
+	ID varchar2(10) unique,
+	PASS varchar2(10) not null,
+	NAME varchar2(20) not null,
+	EMAIL varchar2(50),
+	AGE number(5),
+	WEIGHT number(10),
+	REGDATE date default sysdate,
+	CNT number(5) default 0
+);
